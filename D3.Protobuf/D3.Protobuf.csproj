@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\MY\Fivver\ExtractCode\XPosed DIII Editor\XPosedDIIIEditor\bin\Debug\dll\D3.Protobuf.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{20764787-AE84-4333-811D-792206B273A2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>DPB</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>DPB</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="protobuf-net">
+      <HintPath>lib\protobuf-net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\UnlockedCosmetics.cs" />
+    <Compile Include="Account\UnlockedCosmeticsData.cs" />
+    <Compile Include="Account\SwitchSavedDefinition.cs" />
+    <Compile Include="HeroFix\SavedDefinition.cs" />
+    <Compile Include="ItemCrafting\CrafterKanaisCubeData.cs" />
+    <Compile Include="ItemCrafting\MysteryData.cs" />
+    <Compile Include="Quests\QuestReward.cs" />
+    <Compile Include="Quests\QuestStepComplete.cs" />
+    <Compile Include="Profile\ClassInfo.cs" />
+    <Compile Include="Profile\SkillWithRune.cs" />
+    <Compile Include="Profile\SkillsWithRunes.cs" />
+    <Compile Include="Profile\PassiveSkills.cs" />
+    <Compile Include="Profile\KillerInfo.cs" />
+    <Compile Include="Profile\HeroProfile.cs" />
+    <Compile Include="Profile\HeroProfileList.cs" />
+    <Compile Include="Profile\HeroMiniProfile.cs" />
+    <Compile Include="Profile\AccountProfile.cs" />
+    <Compile Include="Profile\PvpMatchPlayer.cs" />
+    <Compile Include="Profile\PvpMatchPlayers.cs" />
+    <Compile Include="Profile\PvpMatch.cs" />
+    <Compile Include="Profile\PvpMatchList.cs" />
+    <Compile Include="Profile\PvpTeam.cs" />
+    <Compile Include="OnlineService\EntityId.cs" />
+    <Compile Include="OnlineService\GameId.cs" />
+    <Compile Include="OnlineService\ItemId.cs" />
+    <Compile Include="Items\RareItemName.cs" />
+    <Compile Include="Items\Friend.cs" />
+    <Compile Include="Items\Generator.cs" />
+    <Compile Include="Items\EmbeddedGenerator.cs" />
+    <Compile Include="Items\SavedItem.cs" />
+    <Compile Include="Items\CurrencySavedData.cs" />
+    <Compile Include="Items\Currency.cs" />
+    <Compile Include="Items\ItemList.cs" />
+    <Compile Include="Items\MailAttachments.cs" />
+    <Compile Include="Items\Mail.cs" />
+    <Compile Include="Items\Mails.cs" />
+    <Compile Include="ItemCrafting\CrafterData.cs" />
+    <Compile Include="ItemCrafting\CrafterTransmogData.cs" />
+    <Compile Include="ItemCrafting\CrafterDevilsHandData.cs" />
+    <Compile Include="ItemCrafting\CrafterSavedData.cs" />
+    <Compile Include="Hireling\Info.cs" />
+    <Compile Include="Hireling\SavedData.cs" />
+    <Compile Include="Hero\VisualItem.cs" />
+    <Compile Include="Hero\VisualEquipment.cs" />
+    <Compile Include="Hero\QuestHistoryEntry.cs" />
+    <Compile Include="Hero\QuestRewardHistoryEntry.cs" />
+    <Compile Include="Hero\Digest.cs" />
+    <Compile Include="Hero\DigestUI.cs" />
+    <Compile Include="Hero\SavedQuest.cs" />
+    <Compile Include="Hero\LearnedLore.cs" />
+    <Compile Include="Hero\SavedConversations.cs" />
+    <Compile Include="Hero\SavePointData_Proto.cs" />
+    <Compile Include="Hero\SkillWithRune.cs" />
+    <Compile Include="Hero\SavedData.cs" />
+    <Compile Include="Hero\Timestamps.cs" />
+    <Compile Include="Hero\SavedDefinition.cs" />
+    <Compile Include="Hero\NameText.cs" />
+    <Compile Include="Hero\HeroList.cs" />
+    <Compile Include="Hero\DigestList.cs" />
+    <Compile Include="Hero\QuestHistoryList.cs" />
+    <Compile Include="Hero\SavedQuestList.cs" />
+    <Compile Include="Hero\QuestRewardHistoryList.cs" />
+    <Compile Include="Hero\BasicAttributeList.cs" />
+    <Compile Include="Hero\ConsoleData.cs" />
+    <Compile Include="Hero\SavedItemLink.cs" />
+    <Compile Include="GB\Handle.cs" />
+    <Compile Include="Console\HeroInfo.cs" />
+    <Compile Include="Console\HeroInfoList.cs" />
+    <Compile Include="Console\Profile.cs" />
+    <Compile Include="Console\BalanceUpdateConfig.cs" />
+    <Compile Include="Console\Prefs.cs" />
+    <Compile Include="Console\PropertyExtension.cs" />
+    <Compile Include="AttributeSerializer\SavedAttribute.cs" />
+    <Compile Include="AttributeSerializer\SavedAttributes.cs" />
+    <Compile Include="AchievementsStaticData\Attribute.cs" />
+    <Compile Include="AchievementsStaticData\CriteriaModifier.cs" />
+    <Compile Include="AchievementsStaticData\CriteriaEvent.cs" />
+    <Compile Include="AchievementsStaticData\StaticCategoryDefinition.cs" />
+    <Compile Include="AchievementsStaticData\StaticAchievementDefinition.cs" />
+    <Compile Include="AchievementsStaticData\StaticCriteriaDefinition.cs" />
+    <Compile Include="AchievementsStaticData\AchievementFile.cs" />
+    <Compile Include="AchievementsStaticData\ModiferTargetType.cs" />
+    <Compile Include="Achievements\AchievementUpdateRecord.cs" />
+    <Compile Include="Achievements\CriteriaUpdateRecord.cs" />
+    <Compile Include="Achievements\Snapshot.cs" />
+    <Compile Include="Account\BannerConfiguration.cs" />
+    <Compile Include="Account\Digest.cs" />
+    <Compile Include="Account\AccountPartition.cs" />
+    <Compile Include="Account\SavedDefinition.cs" />
+    <Compile Include="Account\AvengerVictim.cs" />
+    <Compile Include="Account\Avenger.cs" />
+    <Compile Include="Account\AvengerData.cs" />
+    <Compile Include="Account\ConsoleData.cs" />
+    <Compile Include="Account\LadderInfo.cs" />
+    <Compile Include="Account\LadderInfoList.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y "$(TargetDir)DPB.dll" "$(SolutionDir)bin\Debug\bin\DPB.dll"</PostBuildEvent>
+  </PropertyGroup>
+</Project>
